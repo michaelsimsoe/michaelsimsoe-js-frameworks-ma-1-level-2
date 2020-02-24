@@ -80,9 +80,9 @@
 
       if (pluginStyles === false) {
         $('head').append(
-          '<link rel="stylesheet" href="lib/slideshow.css" type="text/css" />'
+          '<link rel="stylesheet" href="slideshow.css" type="text/css" />'
         );
       }
     }
   };
-})(jQuery);
+})(window.jQuery);
