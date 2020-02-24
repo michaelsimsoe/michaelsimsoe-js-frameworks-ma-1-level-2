@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Test</title>
+  </head>
+  <body>
+    <div id="gallery">
+      <img src="images/david-leveque-GpNOhig3LSU-unsplash.jpg" alt="caption" />
+      <img src="images/dominik-scythe-Sot0f3hQQ4Y-unsplash.jpg" alt="caption" />
+      <img
+        src="images/jelleke-vanooteghem-6NUlOHM40w8-unsplash.jpg"
+        alt="caption"
+      />
+      <img
+        src="images/rock-n-roll-monkey-LEPhZkQbUrk-unsplash.jpg"
+        alt="caption"
+      />
+      <img src="images/tincho-franco-uL8rx9SeZQ0-unsplash.jpg" alt="caption" />
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="lib/slideshow.js"></script>
+    <script>
+      // Shorthand for $('document').ready()
+      $(function() {
+        $('#gallery').slideShow();
+      });
+    </script>
+  </body>
+</html>
