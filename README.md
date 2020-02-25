@@ -27,14 +27,16 @@ Inside your index.js (or wherever you may see fit):
 ```js
 import $ from 'jquery';
 import 'super-simple-jquery-slideshow/slideshow.css';
-import 'super-simple-jquery-slideshow';
 
 window.jQuery = $;
 
 $('document').ready(function() {
+  require('super-simple-jquery-slideshow');
   $('#gallery').slideShow();
 });
 ```
+
+_If you are importing jQuery as an npm dependency you need to require it when the document is loaded._
 
 You need to import the css file `slideshow.css`in order to get the correct behaviour. It will position the images `absolute` and hide the non-active images.
 

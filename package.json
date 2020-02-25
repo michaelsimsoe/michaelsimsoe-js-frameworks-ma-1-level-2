@@ -1,6 +1,6 @@
 {
   "name": "super-simple-jquery-slideshow",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A super simple jquery slideshow made for school project",
   "main": "slideshow.js",
   "directories": {
