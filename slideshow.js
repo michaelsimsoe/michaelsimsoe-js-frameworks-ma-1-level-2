@@ -1,4 +1,4 @@
-(function($) {
+export default (function($) {
   $.fn.slideShow = function(options) {
     // Default options
     let settings = $.extend(
@@ -34,8 +34,6 @@
       .first()
       .addClass('active');
 
-    appendStyles();
-
     $('#_slideshow-gallery__next-btn').click(function() {
       let currentImg = $('._slideshow-gallery__image.active');
       let nextImg = currentImg.next();
@@ -69,20 +67,5 @@
           .addClass('active');
       }
     });
-
-    function appendStyles() {
-      const pluginStyles = false;
-      $('link').each(function() {
-        if ($(this).attr('href') === 'slideshow.css') {
-          pluginStyles = true;
-        }
-      });
-
-      if (pluginStyles === false) {
-        $('head').append(
-          '<link rel="stylesheet" href="slideshow.css" type="text/css" />'
-        );
-      }
-    }
   };
 })(window.jQuery);
